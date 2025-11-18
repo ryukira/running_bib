@@ -87,3 +87,49 @@ Instruksi tindakan (approach and verify, standby at finish line, etc.)
 Automated Response:
 Email/SMS ke kontak darurat pelari jika terdeteksi anomali serius
 Flag pada hasil sementara dengan status "Under Review"
+
+Keamanan dan Privacy
+Data Protection:
+Data biometrik (face template dan fingerprint) disimpan terenkripsi menggunakan AES-256​
+Face template berbentuk mathematical representation, bukan foto asli, sehingga tidak bisa di-reverse​
+Data hanya disimpan selama event (+ 30 hari untuk dispute handling), kemudian dihapus sesuai GDPR/privacy regulation
+
+Access Control:
+Multi-level authentication untuk staff (role-based access)
+Audit log untuk semua akses ke data sensitif
+Biometric data hanya accessible oleh authentication engine, tidak oleh human operator
+Estimasi Biaya Implementasi
+Berdasarkan riset harga komponen:​
+
+Hardware (untuk event 1000 pelari):
+1000x RFID UHF BibTag: ~Rp 5.000.000 (@ Rp 5.000/chip)
+5x RFID Reader & Antenna kit: ~Rp 50.000.000
+3x Face Recognition Camera System: ~Rp 30.000.000
+2x Fingerprint Scanner: ~Rp 5.000.000
+Server & networking: ~Rp 20.000.000
+
+Software:
+Custom development (authentication + alert system): ~Rp 100.000.000 - 150.000.000
+Face recognition SDK license (annual): ~Rp 30.000.000
+Cloud hosting & database (per event): ~Rp 5.000.000
+Total investasi awal: ~Rp 245.000.000 - 295.000.000
+Operational cost per event: ~Rp 10.000.000 - 15.000.000
+
+Keuntungan Sistem Ini
+Untuk Panitia:
+Mencegah kecurangan bib palsu yang merugikan pendapatan​
+Meningkatkan kredibilitas dan reputasi event
+Data real-time untuk race management
+Bukti digital untuk dispute resolution
+
+Untuk Pelari Legitimate:
+Fair competition - tidak dirugikan oleh cheater​
+Keamanan data pribadi terjaga
+Hasil race yang akurat dan terpercaya
+Emergency response lebih cepat (biometric linked to emergency contact)
+
+Untuk Keamanan Event:
+Deteksi dini anomali atau potensi bahaya
+Tracking real-time posisi pelari
+Integrasi dengan medical team untuk health monitoring​
+Sistem ini mengkombinasikan teknologi RFID yang sudah mature untuk race timing dengan face recognition dan fingerprint authentication yang semakin terjangkau, menciptakan solusi anti-fraud yang komprehensif namun tetap user-friendly untuk race event di untuk race event di Indonesia.​
